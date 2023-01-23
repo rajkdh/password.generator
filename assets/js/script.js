@@ -29,3 +29,7 @@ function generatePassword(){
         return
         }
     }
+    var userWantsNumbers = window.confirm('include numbers in your password?')
+    var userWantsSymbols = window.confirm('include symbols in your password?')
+    var userWantsLowerCase = window.confirm('include lowercase letters in your password?')
+    var userWantsUpperCase = window.confirm('include uppercase letters in your password?')
