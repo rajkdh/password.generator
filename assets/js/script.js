@@ -14,3 +14,14 @@ function getRandomItem(list) {
     return list[randomInt(0, list.length -1)]
 }
 
+function generatePassword(){ 
+
+    var userInput = window.prompt("Enter desired password length")
+    
+    var passwordLength = parseInt(userInput)
+  
+    if (isNaN(passwordLength)) {
+      window.alert('That is not a number!')
+      return; 
+      }
+    }
