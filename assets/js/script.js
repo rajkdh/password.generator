@@ -1,4 +1,4 @@
-// Assignment Code
+
 var generateBtn = document.querySelector("#generate");
 
 function randomInt(min, max){
@@ -28,7 +28,7 @@ function generatePassword(){
         window.alert('Error! Password length must be between 8 and 128 characters')
         return
         }
-    }
+    
     var userWantsNumbers = window.confirm('include numbers in your password?')
     var userWantsSymbols = window.confirm('include symbols in your password?')
     var userWantsLowerCase = window.confirm('include lowercase letters in your password?')
@@ -61,16 +61,17 @@ function generatePassword(){
 
     generatedPassword += randomChar
     } 
-    return generatedPassword
-
+    return generatedPassword;
+}
     function writePassword() {
         var password = generatePassword();
         var passwordText = document.querySelector("#password");
       
         passwordText.value = password;
-      
       }
-// Add event listener to generate button
 
+
+// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
 
