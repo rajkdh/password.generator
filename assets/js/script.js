@@ -52,3 +52,21 @@ function generatePassword(){
     } if (optionList.length === 0){
         optionList.push(lowercaseList)
     }
+
+    var generatedPassword = ''
+
+    for(var i = 0; i < passwordLength; i++){
+    var randomList = getRandomItem(optionList)
+    var randomChar = getRandomItem(randomList)
+
+    generatedPassword += randomChar
+    } 
+    return generatedPassword
+
+    function writePassword() {
+        var password = generatePassword();
+        var passwordText = document.querySelector("#password");
+      
+        passwordText.value = password;
+      
+      }
